@@ -51,10 +51,33 @@
       "id": "1ef91263-22a7-4a61-939c-3a01316fcfca"
     },
     {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "421c8804-a5a7-45ac-88eb-9f8f6d1dad16"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "b5f69905-bc7a-4b9d-9756-f37073f722e7"
+      },
+      "id": "7b8c4a77-f3f5-4313-9bac-202b75059907"
+    },
+    {
       "command": "EVENT_LOOP",
       "args": {},
       "children": {
         "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "0",
+              "value": {
+                "type": "number",
+                "value": 9999
+              }
+            },
+            "id": "462a3c5d-d486-4d95-b8ca-f78883d4cac1"
+          },
           {
             "command": "EVENT_TEXT",
             "args": {
@@ -85,19 +108,31 @@
             "command": "EVENT_MENU",
             "args": {
               "variable": "T0",
-              "items": 4,
+              "items": 5,
               "option1": "Level 1",
               "option2": "Level 2",
               "option3": "Level 3",
               "option4": "Level 4",
-              "option5": "",
+              "option5": "Level 5",
               "option6": "",
               "option7": "",
               "option8": "",
               "cancelOnB": false,
-              "layout": "menu"
+              "layout": "dialogue"
             },
             "id": "b4953264-fa23-4f2e-a27e-09b719257012"
+          },
+          {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {},
+            "id": "b3697dd7-b183-4f18-86c2-b52f2f197a03"
+          },
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "4acbd0d9-b639-4203-90da-2809c579c764"
+            },
+            "id": "f4b017e2-d983-4e98-8bb3-93161f2c9ddd"
           },
           {
             "command": "EVENT_IF",
@@ -113,7 +148,8 @@
                   "value": 1
                 }
               },
-              "__collapseElse": false
+              "__collapseElse": false,
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -401,7 +437,105 @@
                                     "id": "b40704c6-b9a7-430a-aec4-a15da5466bae"
                                   }
                                 ],
-                                "false": []
+                                "false": [
+                                  {
+                                    "command": "EVENT_COMMENT",
+                                    "args": {
+                                      "text": "no comment lol",
+                                      "__collapse": false
+                                    },
+                                    "id": "7d2dedf2-5414-4ee8-bf61-3caa1c34d3fc"
+                                  },
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "T0"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 5
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "gte",
+                                              "valueA": {
+                                                "type": "variable",
+                                                "value": "0"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 5
+                                              }
+                                            },
+                                            "__collapseElse": false
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_SWITCH_SCENE",
+                                                "args": {
+                                                  "sceneId": "337c4be1-8025-417b-887e-1f952ae95394",
+                                                  "x": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                  },
+                                                  "y": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                  },
+                                                  "direction": "",
+                                                  "fadeSpeed": "2"
+                                                },
+                                                "id": "7d2ade06-b30f-4834-b308-2849c87a9d95"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Locked!"
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "d5574886-9664-4c6b-82a8-327aa1436684"
+                                              }
+                                            ]
+                                          },
+                                          "id": "aa6aa129-bb14-4a49-b441-4b33279de905"
+                                        }
+                                      ],
+                                      "false": []
+                                    },
+                                    "id": "f5db2cb7-a3ad-4f83-b372-dab797674360"
+                                  }
+                                ]
                               },
                               "id": "21ace56a-1e98-4c02-ad12-d50a3c6efab7"
                             }

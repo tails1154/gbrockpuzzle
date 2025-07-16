@@ -38,7 +38,7 @@
     {
       "command": "EVENT_SET_VALUE",
       "args": {
-        "variable": "0",
+        "variable": "1",
         "value": {
           "type": "number",
           "value": 6

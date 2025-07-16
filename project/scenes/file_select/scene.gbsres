@@ -17,14 +17,9 @@
   "symbol": "scene_3",
   "x": 792,
   "y": 344,
-  "script": [
-    {
-      "command": "EVENT_MUSIC_STOP",
-      "args": {},
-      "id": "c05970f2-9759-4078-baa4-fff91ffb4799"
-    }
-  ],
+  "script": [],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6"
 }

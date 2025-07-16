@@ -16,10 +16,21 @@
         "variable": "0",
         "value": {
           "type": "number",
-          "value": 1
+          "value": 9999
         }
       },
       "id": "cb151064-26f2-41c0-bb66-5f3b3172db87"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "c6effa62-5273-44d6-8079-14c86b3042cb"
     },
     {
       "command": "EVENT_SWITCH_SCENE",

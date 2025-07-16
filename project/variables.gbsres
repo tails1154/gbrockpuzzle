@@ -7,6 +7,11 @@
       "symbol": "var_unlockedlevels"
     },
     {
+      "id": "1",
+      "name": "hasBeatLvl5",
+      "symbol": "var_hasbeatlvl5"
+    },
+    {
       "id": "6049873d-1ea5-4d70-9b35-46712f430271__L0",
       "name": "Local 0",
       "symbol": "var_local_0"

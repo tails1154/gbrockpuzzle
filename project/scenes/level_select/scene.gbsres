@@ -7,7 +7,7 @@
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "POINTNCLICK",
+  "type": "TOPDOWN",
   "paletteIds": [
     "default-ui"
   ],
@@ -65,7 +65,9 @@
     },
     {
       "command": "EVENT_LOOP",
-      "args": {},
+      "args": {
+        "__collapse": true
+      },
       "children": {
         "true": [
           {
@@ -109,14 +111,14 @@
             "command": "EVENT_MENU",
             "args": {
               "variable": "T0",
-              "items": 6,
+              "items": 7,
               "option1": "Level 1",
               "option2": "Level 2",
               "option3": "Level 3",
               "option4": "Level 4",
               "option5": "Level 5",
               "option6": "Level 6",
-              "option7": "",
+              "option7": "Credits",
               "option8": "",
               "cancelOnB": false,
               "layout": "dialogue"
@@ -149,8 +151,8 @@
                   "value": 1
                 }
               },
-              "__collapseElse": true,
-              "__collapse": true
+              "__collapseElse": false,
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -583,11 +585,11 @@
                                                         "sceneId": "d0903b4c-68d2-471d-b954-7840b2188699",
                                                         "x": {
                                                           "type": "number",
-                                                          "value": 0
+                                                          "value": 5
                                                         },
                                                         "y": {
                                                           "type": "number",
-                                                          "value": 17
+                                                          "value": 3
                                                         },
                                                         "direction": "",
                                                         "fadeSpeed": "2"
@@ -634,7 +636,111 @@
                                                 "id": "07e8d839-5123-47e3-a35c-240a86c3a3e3"
                                               }
                                             ],
-                                            "false": []
+                                            "false": [
+                                              {
+                                                "command": "EVENT_COMMENT",
+                                                "args": {
+                                                  "text": "credits (after game has been beaten)"
+                                                },
+                                                "id": "ae2fe95d-092f-4645-91cc-aa9bb068031e"
+                                              },
+                                              {
+                                                "command": "EVENT_IF",
+                                                "args": {
+                                                  "condition": {
+                                                    "type": "eq",
+                                                    "valueA": {
+                                                      "type": "variable",
+                                                      "value": "T0"
+                                                    },
+                                                    "valueB": {
+                                                      "type": "number",
+                                                      "value": 7
+                                                    }
+                                                  },
+                                                  "__collapseElse": false
+                                                },
+                                                "children": {
+                                                  "true": [
+                                                    {
+                                                      "command": "EVENT_IF",
+                                                      "args": {
+                                                        "condition": {
+                                                          "type": "eq",
+                                                          "valueA": {
+                                                            "type": "variable",
+                                                            "value": "2"
+                                                          },
+                                                          "valueB": {
+                                                            "type": "true"
+                                                          }
+                                                        },
+                                                        "__collapseElse": false
+                                                      },
+                                                      "children": {
+                                                        "true": [
+                                                          {
+                                                            "command": "EVENT_SWITCH_SCENE",
+                                                            "args": {
+                                                              "sceneId": "88ac2b94-c7af-481b-9506-850efb58d344",
+                                                              "x": {
+                                                                "type": "number",
+                                                                "value": 0
+                                                              },
+                                                              "y": {
+                                                                "type": "number",
+                                                                "value": 8
+                                                              },
+                                                              "direction": "",
+                                                              "fadeSpeed": "2"
+                                                            },
+                                                            "id": "343fe0d6-6920-4346-b52f-7fa7cb04fa33"
+                                                          }
+                                                        ],
+                                                        "false": [
+                                                          {
+                                                            "command": "EVENT_MUSIC_PLAY",
+                                                            "args": {
+                                                              "musicId": "b5f69905-bc7a-4b9d-9756-f37073f722e7",
+                                                              "__collapse": false
+                                                            },
+                                                            "id": "3e30b06a-ce02-4402-91e3-3686c4c396ee"
+                                                          },
+                                                          {
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                              "text": [
+                                                                "Locked!"
+                                                              ],
+                                                              "__section": "text",
+                                                              "avatarId": "",
+                                                              "minHeight": 4,
+                                                              "maxHeight": 7,
+                                                              "textX": 1,
+                                                              "textY": 1,
+                                                              "textHeight": 5,
+                                                              "position": "bottom",
+                                                              "clearPrevious": true,
+                                                              "showFrame": "true",
+                                                              "speedIn": -1,
+                                                              "speedOut": -1,
+                                                              "closeWhen": "key",
+                                                              "closeButton": "a",
+                                                              "closeDelayTime": 0.5,
+                                                              "closeDelayFrames": 30
+                                                            },
+                                                            "id": "86880eeb-15f0-4c07-aecf-eb8928bf3d14"
+                                                          }
+                                                        ]
+                                                      },
+                                                      "id": "fabe6c9a-42a2-454d-9de3-ef7b0a1ec96a"
+                                                    }
+                                                  ],
+                                                  "false": []
+                                                },
+                                                "id": "db548c9f-7cbf-4d1c-9877-6c47aaf2a66f"
+                                              }
+                                            ]
                                           },
                                           "id": "57ab9b6f-1a0a-47cc-8198-50491ba14e01"
                                         }

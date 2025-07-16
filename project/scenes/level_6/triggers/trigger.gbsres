@@ -9,7 +9,41 @@
   "prefabScriptOverrides": {},
   "width": 4,
   "height": 18,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "fe2be6ff-82de-4d80-b8d3-1a38c28aa23a"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "760d9a40-dce6-466b-9c14-8f76b01cf221",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "52adbda1-3465-4157-96ab-a2412c010523"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "49c40a2d-ff3b-436f-8a76-c6a802dee597"
+    }
+  ],
   "leaveScript": [],
   "_index": 0
 }

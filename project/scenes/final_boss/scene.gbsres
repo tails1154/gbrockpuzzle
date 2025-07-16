@@ -1,0 +1,145 @@
+{
+  "_resourceType": "scene",
+  "id": "760d9a40-dce6-466b-9c14-8f76b01cf221",
+  "_index": 10,
+  "name": "final boss",
+  "backgroundId": "df34fd47-b788-4314-b6aa-9a2fd98f74cb",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "PLATFORM",
+  "paletteIds": [
+    "default-bg-3"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0012c+0f14+0028+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_11",
+  "x": 1091.6661386165388,
+  "y": 1067.4286284098225,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "d981c2fd-84f0-49f6-b06a-c858df7a72f4"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "cfad94fa-f7f6-4e17-b1eb-1f5e7ff78d2d"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "1224c890-66cb-4d4c-a742-1d26c492b7da"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "be39a1d3-e491-4a99-bf6a-70621f3aefd1"
+      },
+      "id": "0f606636-b3eb-482b-a23f-95bd0222d842"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "projectile",
+              "spriteSheetId": "a1b94701-9d14-4450-80ca-7c0bf6ff61df",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 0,
+              "y": 0,
+              "directionType": "actor",
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "$self$",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 2,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "3"
+              ]
+            },
+            "id": "1205b334-39f3-43c7-b506-efb4b670c0a2"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "7f98139e-52cd-4544-97c6-1e9d9c2d3cf4"
+          }
+        ]
+      },
+      "id": "11e6dc3b-9b01-40a6-97a0-1de822a9dcfb"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You Lost!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "4c805bff-3d8f-48bf-b8c7-47bb41970798"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "d0903b4c-68d2-471d-b954-7840b2188699",
+        "x": {
+          "type": "number",
+          "value": 116
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "a4f32c9e-20e1-46f5-ba9a-3c65febc0807"
+    }
+  ],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7ca3efb5-eca7-4745-bc2d-b5d087f7ed92"
+}

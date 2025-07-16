@@ -73,49 +73,6 @@
         ]
       },
       "id": "12232b66-fd56-43cc-82e6-5591705f648f"
-    },
-    {
-      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-      "args": {
-        "actorId": "$self$",
-        "speed": 1
-      },
-      "id": "cb353b78-693e-4102-b79b-109bd0cc7b58"
-    },
-    {
-      "id": "6e931cff-13a1-4cdb-a854-0b115f37ebd3",
-      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-      "args": {
-        "actorId": "$self$",
-        "speed": 0.5,
-        "__collapse": true
-      }
-    },
-    {
-      "id": "fe5a7585-6389-4f99-bf82-4e5f295492c8",
-      "command": "EVENT_ACTOR_MOVE_RELATIVE",
-      "args": {
-        "actorId": "$self$",
-        "x": {
-          "type": "number",
-          "value": 4
-        },
-        "y": {
-          "type": "number",
-          "value": 0
-        },
-        "moveType": "horizontal",
-        "useCollisions": false
-      }
-    },
-    {
-      "id": "58a614a3-9786-496f-ab29-14dc024c9497",
-      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-      "args": {
-        "actorId": "$self$",
-        "speed": 1,
-        "__collapse": false
-      }
     }
   ],
   "playerHit1Script": [],

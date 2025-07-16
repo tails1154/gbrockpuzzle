@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "df34fd47-b788-4314-b6aa-9a2fd98f74cb",
+  "name": "finalboss",
+  "symbol": "bg_finalboss",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "finalboss.png",
+  "tileColors": ""
+}

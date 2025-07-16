@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "057ac7e2-9e0d-42ec-8320-cc15e9ec5d70",
+  "id": "21417f5c-452c-4496-aa80-ab0d1aa5be57",
   "name": "",
   "frame": 0,
   "animate": false,
@@ -14,7 +14,7 @@
   "persistent": false,
   "collisionGroup": "1",
   "prefabScriptOverrides": {},
-  "symbol": "actor_15",
+  "symbol": "actor_37",
   "script": [
     {
       "command": "EVENT_TEXT",
@@ -39,7 +39,7 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "80af4544-7059-41fb-b1b1-bdeb945f513d"
+      "id": "0f2d219b-b8a9-44da-93f5-94cccb8d16bb"
     },
     {
       "command": "EVENT_SWITCH_SCENE",
@@ -56,15 +56,30 @@
         "direction": "",
         "fadeSpeed": "2"
       },
-      "id": "ba41e1f4-e50c-4b10-b344-b4ab8d6d13b7"
+      "id": "0bf1de5b-3898-48ff-9ecd-021ac6dc1293"
     }
   ],
   "startScript": [],
   "updateScript": [],
-  "hit1Script": [],
+  "hit1Script": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "408ce5a7-6600-4a9f-b933-44b265cd385f"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "32097ba8-8593-4163-8a07-65f93e84c383"
+    }
+  ],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 24,
-  "y": 15,
+  "x": 21,
+  "y": 3,
   "_index": 0
 }

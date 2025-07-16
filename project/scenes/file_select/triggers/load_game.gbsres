@@ -16,6 +16,13 @@
         "saveSlot": 0
       },
       "id": "9604446f-c75b-4d88-9097-d041bb4a2367"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": "2"
+      },
+      "id": "9040ba76-67d0-4456-a489-c35a489678e5"
     }
   ],
   "leaveScript": [],

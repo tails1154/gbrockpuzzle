@@ -20,6 +20,23 @@
         }
       },
       "id": "cb151064-26f2-41c0-bb66-5f3b3172db87"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6049873d-1ea5-4d70-9b35-46712f430271",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "b8c5b278-d787-490f-a64d-860aae57beaa"
     }
   ],
   "leaveScript": [],

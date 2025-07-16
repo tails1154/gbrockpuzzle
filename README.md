@@ -14,6 +14,7 @@ Rock puzzle game for the gameboy
 
 4. Press the play button
 
-# Binary release
+# Binary releases
 
-Coming when I think there is enough levels
+
+Go to the releases section of the github repo for the offical releases

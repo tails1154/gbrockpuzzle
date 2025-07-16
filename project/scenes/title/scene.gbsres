@@ -27,7 +27,25 @@
         "__scriptTabs": "press"
       },
       "children": {
-        "true": []
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "a7e762ac-f294-44fa-b0b4-a283cdd9aef9",
+              "x": {
+                "type": "number",
+                "value": 7
+              },
+              "y": {
+                "type": "number",
+                "value": 6
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "a40ec9e3-7e01-4c4a-8a99-8fc52fec47d5"
+          }
+        ]
       },
       "id": "81761dc4-2880-4da5-b231-d819886cb615"
     }

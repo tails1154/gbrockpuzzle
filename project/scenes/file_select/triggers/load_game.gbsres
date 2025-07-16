@@ -1,0 +1,23 @@
+{
+  "_resourceType": "trigger",
+  "id": "f3a2913c-f6de-474b-9cdc-970d8b1b96ea",
+  "name": "load game",
+  "prefabId": "",
+  "x": 2,
+  "y": 9,
+  "symbol": "trigger_1",
+  "prefabScriptOverrides": {},
+  "width": 17,
+  "height": 3,
+  "script": [
+    {
+      "command": "EVENT_LOAD_DATA",
+      "args": {
+        "saveSlot": 0
+      },
+      "id": "9604446f-c75b-4d88-9097-d041bb4a2367"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

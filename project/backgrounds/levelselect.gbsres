@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "0e72de61-1c15-45fc-8dd4-f14085596683",
+  "name": "levelselect",
+  "symbol": "bg_levelselect",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "levelselect.png",
+  "tileColors": ""
+}

@@ -8,7 +8,9 @@
   "width": 20,
   "height": 18,
   "type": "POINTNCLICK",
-  "paletteIds": [],
+  "paletteIds": [
+    "default-ui"
+  ],
   "spritePaletteIds": [],
   "collisions": "",
   "autoFadeSpeed": 1,

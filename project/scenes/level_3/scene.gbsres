@@ -1,0 +1,81 @@
+{
+  "_resourceType": "scene",
+  "id": "768fe438-6925-4d29-b6dd-ab1ad2d8cefe",
+  "_index": 6,
+  "name": "level 3",
+  "backgroundId": "08003697-ea03-4e7f-ae70-c45a073a4b61",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00!0f11+003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!007+0f!003+0f!007+0f!002+0f!004+0f!003+0f!007+0f!002+0f!004+0f!003+0f11+0016+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_7",
+  "x": 472,
+  "y": 600,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Press START to\nreturn to",
+          "level select."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "baf74c3f-b6f5-4863-b942-49a4f87b6ad9"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "6049873d-1ea5-4d70-9b35-46712f430271",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "26c80f8f-6347-4dbd-9f99-4ead5153eace"
+          }
+        ]
+      },
+      "id": "774b1a9a-feec-45d4-b613-ef8d3884c7dd"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

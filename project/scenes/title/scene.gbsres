@@ -48,6 +48,17 @@
         ]
       },
       "id": "81761dc4-2880-4da5-b231-d819886cb615"
+    },
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 4,
+        "frequency": 300,
+        "duration": 0.05,
+        "effect": 0
+      },
+      "id": "4fb1129b-0cc2-4d52-8526-2749f91dd637"
     }
   ],
   "playerHit1Script": [],

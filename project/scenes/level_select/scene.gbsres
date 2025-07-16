@@ -51,10 +51,10 @@
             "command": "EVENT_MENU",
             "args": {
               "variable": "T0",
-              "items": 2,
+              "items": 3,
               "option1": "Level 1",
               "option2": "Level 2",
-              "option3": "",
+              "option3": "Level 3",
               "option4": "",
               "option5": "",
               "option6": "",
@@ -116,7 +116,7 @@
                         "value": 2
                       }
                     },
-                    "__collapseElse": true
+                    "__collapseElse": false
                   },
                   "children": {
                     "true": [
@@ -134,7 +134,8 @@
                               "value": 2
                             }
                           },
-                          "__collapseElse": false
+                          "__collapseElse": false,
+                          "__collapse": true
                         },
                         "children": {
                           "true": [
@@ -187,7 +188,97 @@
                         "id": "0444b2cd-c754-4c7c-b834-2705da128c21"
                       }
                     ],
-                    "false": []
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "T0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 3
+                            }
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "gte",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "0"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 3
+                                  }
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_SWITCH_SCENE",
+                                    "args": {
+                                      "sceneId": "768fe438-6925-4d29-b6dd-ab1ad2d8cefe",
+                                      "x": {
+                                        "type": "number",
+                                        "value": 3
+                                      },
+                                      "y": {
+                                        "type": "number",
+                                        "value": 3
+                                      },
+                                      "direction": "",
+                                      "fadeSpeed": "2"
+                                    },
+                                    "id": "b0502993-9bd1-43ac-a46b-fbfceed58a4a"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Locked!"
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "26d7aa65-65aa-481a-94fa-c4e00803d536"
+                                  }
+                                ]
+                              },
+                              "id": "ba3981d7-2b74-4ac1-b989-c12f8dcee6dd"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "614b8a1f-cfb5-4445-93d5-e936f8519249"
+                      }
+                    ]
                   },
                   "id": "920ad90c-3706-45be-900b-3529847e3a4c"
                 }

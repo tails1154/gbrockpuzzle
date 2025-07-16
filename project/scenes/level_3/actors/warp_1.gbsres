@@ -1,0 +1,43 @@
+{
+  "_resourceType": "actor",
+  "id": "ed6457bc-941a-4713-a9a9-8adcdb654c26",
+  "name": "warp 1",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "7f73dd77-02fa-4947-8d5d-66c0e227df12",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_3",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "8ce38d3d-fb91-4f3a-b6e3-5e79ecaf20f9"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 7,
+  "y": 15,
+  "_index": 0
+}

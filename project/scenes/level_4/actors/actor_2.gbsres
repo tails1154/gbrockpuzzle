@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "27e57c5e-62a4-4512-a226-3c1b0e7abed6",
+  "id": "78af1426-6900-435f-8ab1-e5fcea28813d",
   "name": "",
   "frame": 0,
   "animate": false,
@@ -14,7 +14,7 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_6",
+  "symbol": "actor_7",
   "script": [
     {
       "command": "EVENT_ACTOR_SET_POSITION",
@@ -22,14 +22,14 @@
         "actorId": "player",
         "x": {
           "type": "number",
-          "value": 2
+          "value": 12
         },
         "y": {
           "type": "number",
-          "value": 9
+          "value": 7
         }
       },
-      "id": "3742b960-9ad1-4b03-b4bb-da6724cff74c"
+      "id": "7dbeeaf9-145a-4520-bb20-b34dc444dd62"
     }
   ],
   "startScript": [],
@@ -37,7 +37,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 11,
-  "y": 9,
+  "x": 2,
+  "y": 8,
   "_index": 1
 }

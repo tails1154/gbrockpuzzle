@@ -15,7 +15,15 @@
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_1",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_ACTOR_PUSH",
+      "args": {
+        "continue": false
+      },
+      "id": "f15ae4f4-8e94-40a6-a887-c940a08efa63"
+    }
+  ],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],

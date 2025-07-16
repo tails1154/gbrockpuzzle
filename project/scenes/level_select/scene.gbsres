@@ -17,6 +17,38 @@
   "y": 336,
   "script": [
     {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "6049873d-1ea5-4d70-9b35-46712f430271",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "867f6455-e157-4e86-8352-970c5c3187f1"
+          }
+        ]
+      },
+      "id": "1ef91263-22a7-4a61-939c-3a01316fcfca"
+    },
+    {
       "command": "EVENT_LOOP",
       "args": {},
       "children": {

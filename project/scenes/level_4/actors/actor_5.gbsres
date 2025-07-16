@@ -22,6 +22,19 @@
         "continue": false
       },
       "id": "98087de2-65d4-482a-aac2-0621a92be21a"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "crash",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": false,
+        "effect": 0
+      },
+      "id": "6c75e0ac-ce5f-473d-a876-5b1c70ff7e78"
     }
   ],
   "startScript": [],

@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "ce7625ef-c0a1-4d9d-b845-d00dd4c2c802",
+  "name": "bmove.wav",
+  "symbol": "sound_bmove_wav",
+  "filename": "bmove.wav",
+  "type": "wav"
+}
